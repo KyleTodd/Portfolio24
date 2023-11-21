@@ -332,8 +332,8 @@
   }
 
   .tech-logo {
-        width: 50px;  /* Adjust as needed */
-        height: 50px; /* Adjust as needed */
+        width: 50px;  
+        height: 50px; 
         filter: invert(100%) sepia(90%) saturate(4%) hue-rotate(123deg) brightness(108%) contrast(100%);
         margin: 0 10px;
         transition: filter 0.3s ease;
@@ -387,7 +387,7 @@
     }
 
     .brand-link {
-    margin-right: 0rem; /* adjust as needed */
+    margin-right: 0rem; 
     }
     
 
