@@ -472,7 +472,7 @@
         <div class="container d-md-flex align-items-center">
           <!-- Iphone Mockup -->
           <div class="col-md-6 col-sm-12">
-            <img src="iphone14.png" width="100%" alt="Iphone Mockup">
+            <img src="iphone14full.png" width="100%" alt="Iphone Mockup">
           </div>
 
           <!-- Featured Project Info -->
@@ -492,7 +492,7 @@
                 <img src="/tech/Azure.svg" class="tech-logo">
               </p>
               <a href="#" class="btn btn-dark"><img src="github.svg" class="button-logo"></a>
-             <a href="https://www.bespokeinsurance.app/" target="_blank" class="btn btn-light" style="margin-left: 1em;">View Project</a>
+             <a href="https://www.bespokeinsurance.app/Login" target="_blank" class="btn btn-light" style="margin-left: 1em;">View Project</a>
             </div>
           </div>
 
