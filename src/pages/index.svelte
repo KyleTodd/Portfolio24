@@ -485,11 +485,11 @@
             </div>
             <div>
               <p class="f-project-icons">
-                <img src="/tech/svelte.svg" class="tech-logo">
-                <img src="/tech/nodejs.svg" class="tech-logo">
+                <img src="/tech/Svelte.svg" class="tech-logo">
+                <img src="/tech/NodeJs.svg" class="tech-logo">
                 <img src="/tech/Rest API's.svg" class="tech-logo">
                 <img src="/tech/SQL.svg" class="tech-logo">
-                <img src="/tech/azure.svg" class="tech-logo">
+                <img src="/tech/Azure.svg" class="tech-logo">
               </p>
               <a href="#" class="btn btn-dark"><img src="github.svg" class="button-logo"></a>
              <a href="https://www.bespokeinsurance.app/" target="_blank" class="btn btn-light" style="margin-left: 1em;">View Project</a>
@@ -512,7 +512,7 @@
                       <h5 class="card-title card-text-colour">Stock Trader</h5>
                       <p class="card-text card-text-colour">Analyses stock sentiment for various social media sources and trades the market</p>
                       <p class="card-text ">
-                        <img src="/tech/python.svg" class="tech-logo">
+                        <img src="/tech/Python.svg" class="tech-logo">
                         <img src="/tech/Rest API's.svg" class="tech-logo">
                         <img src="/tech/SQL.svg" class="tech-logo">
                       </p>
@@ -530,9 +530,9 @@
                       <h5 class="card-title card-text-colour">Betting Arbitrage Finder</h5>
                       <p class="card-text card-text-colour">Finds oppurtunities within the Austrailian sports betting scene for odds arbitrage oppurtunities</p>
                       <p class="card-text ">
-                        <img src="/tech/python.svg" class="tech-logo">
+                        <img src="/tech/Python.svg" class="tech-logo">
                         <img src="/tech/Rest API's.svg" class="tech-logo">
-                        <img src="/tech/django.svg" class="tech-logo">
+                        <img src="/tech/Django.svg" class="tech-logo">
                       </p>
                       <a href="#" class="btn btn-dark"><img src="github.svg" class="button-logo"></a>
                       
@@ -548,10 +548,10 @@
                       <h5 class="card-title card-text-colour">Resume API</h5>
                       <p class="card-text card-text-colour">Custome API allowing anyone to pull data from my resume.</p>
                       <p class="card-text ">
-                        <img src="/tech/javascript.svg" class="tech-logo">
+                        <img src="/tech/JavaScript.svg" class="tech-logo">
                         <img src="/tech/Rest API's.svg" class="tech-logo">
-                        <img src="/tech/Nodejs.svg" class="tech-logo">
-                        <img src="/tech/html.svg" class="tech-logo">
+                        <img src="/tech/NodeJs.svg" class="tech-logo">
+                        <img src="/tech/HTML.svg" class="tech-logo">
                       </p>
                       <a href="https://github.com/KyleTodd/CryptoCheckerCMC-API" class="btn btn-dark"><img src="github.svg" class="button-logo"></a>
                       
