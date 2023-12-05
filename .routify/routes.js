@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.12
- * File generated Thu Nov 09 2023 20:01:03 GMT+1100 (Australian Eastern Daylight Time)
+ * File generated Tue Dec 05 2023 16:05:01 GMT+1100 (Australian Eastern Daylight Time)
  */
 
 export const __version = "2.18.12"
-export const __timestamp = "2023-11-09T09:01:03.540Z"
+export const __timestamp = "2023-12-05T05:05:01.292Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
