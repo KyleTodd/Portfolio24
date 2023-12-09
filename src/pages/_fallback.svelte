@@ -1,5 +1,6 @@
 <script>
-    import { url } from '@roxi/routify'
+    import { url,goto } from '@roxi/routify'
+    $goto('/')
 </script>
 
 <style>
