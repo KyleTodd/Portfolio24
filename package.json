@@ -22,6 +22,7 @@
         "vite": "^3.2.7"
     },
     "dependencies": {
+        "@hotjar/browser": "^1.0.9",
         "bootstrap": "^5.3.1",
         "inter-ui": "^3.19.3",
         "typewriter-effect": "^2.20.1"

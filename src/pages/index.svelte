@@ -1,6 +1,7 @@
 <script>
 	import { metatags } from "@roxi/routify";
 	import { onMount, onDestroy } from "svelte";
+	import Hotjar from "@hotjar/browser";
 	import Typewriter from "typewriter-effect/dist/core";
 
 	metatags.title = "Kyle Todd - Software Developer";
@@ -16,6 +17,8 @@
 	let index = 0;
 	let activePopup = null;
 	let nonActive = null;
+	const siteId = 3790677;
+	const hotjarVersion = 6;
 
 	const resumeUrl = "KYLETODD_Resume.pdf";
 
@@ -73,6 +76,8 @@
 	onMount(() => {
 		// Listen for mousemove to update the cursor position
 		window.addEventListener("mousemove", updateCursor);
+		// Add hotjar
+		Hotjar.init(siteId, hotjarVersion);
 		// Initialize the typewriter effect
 		typewriter = new Typewriter("#typewriter", {
 			strings: [
@@ -384,7 +389,7 @@
 							href="https://www.bespokeinsurance.app/Login"
 							target="_blank"
 							class="btn btn-light"
-							style="margin-left: 1em;">View Project</a
+							style="margin-left: 1em;">View Demo</a
 						>
 					</div>
 				</div>
@@ -568,7 +573,7 @@
 								<img src="/tech/Rest API's.svg" class="tech-logo" />
 								<img src="/tech/Django.svg" class="tech-logo" />
 							</p>
-							<a href="#" class="btn btn-dark"
+							<a href="https://github.com/KyleTodd/Arby" class="btn btn-dark"
 								><img src="github.svg" class="button-logo" /></a
 							>
 						</div>
