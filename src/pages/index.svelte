@@ -19,6 +19,9 @@
 	let nonActive = null;
 	const siteId = 3790677;
 	const hotjarVersion = 6;
+	let name = "";
+	let email = "";
+	let message = "";
 
 	const resumeUrl = "KYLETODD_Resume.pdf";
 
@@ -35,6 +38,27 @@
 		// x = event.clientX - 200 + window.scrollX;
 		// y = event.clientY - 180 + window.scrollY;
 	};
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+
+		const formData = { name, email, message };
+
+		try {
+			const response = await fetch("https://api.kyletodd.com.au/submitemail", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(formData),
+			});
+
+			const data = await response.json();
+			console.log(data);
+		} catch (error) {
+			console.error("Error:", error);
+		}
+	}
 
 	let techs = [
 		"Azure",
@@ -675,17 +699,16 @@
 						<div class="row align-items-left justify-content-left">
 							<!-- Email Section -->
 							<div class=" col-12 text-left">
-								<form
-									action="https://api.kyletodd.com.au/submitemail"
-									method="get"
-								>
+								<form on:submit={handleSubmit}>
 									<div class="form-group form-inputs">
 										<input
 											type="text"
 											class="form-control form-control-lg"
 											id="name"
 											name="name"
+											bind:value={name}
 											placeholder="Name"
+											required
 										/>
 									</div>
 
@@ -694,6 +717,8 @@
 											type="email"
 											class="form-control form-control-lg"
 											id="email"
+											name="email"
+											bind:value={email}
 											placeholder="Email"
 											required
 										/>
@@ -704,6 +729,7 @@
 											id="message"
 											name="message"
 											placeholder="Your Message"
+											bind:value={message}
 											class="form-control form-control-lg"
 											required
 										/>
