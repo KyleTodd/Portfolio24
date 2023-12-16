@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+.scroll-down-arrow span {
+    /* Styling for the text */
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
 html,
 body {
     position: relative;
@@ -107,8 +118,13 @@ ul {
 .scroll-down-arrow {
     font-size: 2rem;
     transition: transform 0.3s;
-    display: block;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
 .scroll-down-arrow:hover {
@@ -381,7 +397,7 @@ ul {
     }
 
     #contact-me {
-        padding-top: 10vh;
+        padding-top: 5vh;
     }
 
     .smallscreen-arrow {
@@ -409,6 +425,14 @@ ul {
     }
 }
 
+.resume {
+    /* padding-top: 5vh; */
+}
+
 .contact-content {
     padding-top: 1vh;
+}
+
+.contact-me {
+    margin-top: 5vh;
 }

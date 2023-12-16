@@ -22,6 +22,8 @@
 	let name = "";
 	let email = "";
 	let message = "";
+	let buttonText = "Submit";
+	let buttonClass = "btn btn-primary btn-lg d-block w-100";
 
 	const resumeUrl = "KYLETODD_Resume.pdf";
 
@@ -42,6 +44,9 @@
 	async function handleSubmit(event) {
 		event.preventDefault();
 
+		buttonText = "Submitting...";
+		buttonClass = "btn btn-success btn-lg d-block w-100";
+
 		const formData = { name, email, message };
 
 		try {
@@ -53,10 +58,24 @@
 				body: JSON.stringify(formData),
 			});
 
-			const data = await response.json();
-			console.log(data);
+			if (response.ok) {
+				buttonText = "Message Submitted";
+				name = email = message = "";
+
+				setTimeout(() => {
+					buttonText = "Submit";
+					buttonClass = "btn btn-primary btn-lg d-block w-100";
+				}, 2500);
+			} else {
+				throw new Error("Submission failed");
+			}
 		} catch (error) {
 			console.error("Error:", error);
+			buttonText = "Submission Failed";
+			alert(
+				"There was an error submitting the form \n Please send an email to kyleatodd@outlook.com"
+			);
+			buttonClass = "btn btn-danger btn-lg d-block w-100";
 		}
 	}
 
@@ -237,21 +256,24 @@
 						href="#content-main"
 						class="scroll-down-arrow"
 						data-section="#content-main"
-						><svg
+					>
+						<span>Click me to continue!</span>
+						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="50"
 							height="50"
 							viewBox="0 0 24 24"
-							><path
+						>
+							<path
 								fill="none"
 								stroke="white"
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								stroke-width="1.5"
 								d="m12 20l6-6m-6 6l-6-6m6 6V9.5M12 4v2.5"
-							/></svg
-						></a
-					>
+							/>
+						</svg>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -377,7 +399,7 @@
 			<div class="container d-md-flex align-items-center">
 				<!-- Iphone Mockup -->
 				<div class="col-md-6 col-sm-12">
-					<img src="iphone14full.png" width="100%" alt="Iphone Mockup" />
+					<img src="iphone14full.webp" width="100%" alt="Iphone Mockup" />
 				</div>
 
 				<!-- Featured Project Info -->
@@ -453,7 +475,7 @@
 						<div class="card project-card">
 							<img
 								class="card-img-top"
-								src="/stocktrader.png"
+								src="/stocktrader.webp"
 								alt="Stock Trader"
 							/>
 							<div class="card-body">
@@ -482,7 +504,7 @@
 						<div class="card project-card">
 							<img
 								class="card-img-top"
-								src="/betting.png"
+								src="/betting.webp"
 								alt="Betting Arbitrage Finder"
 							/>
 							<div class="card-body">
@@ -508,7 +530,7 @@
 					<!-- Carousel item for Card 3 -->
 					<div class="carousel-item">
 						<div class="card project-card">
-							<img class="card-img-top" src="/api.png" alt="Resume API" />
+							<img class="card-img-top" src="/api.webp" alt="Resume API" />
 							<div class="card-body">
 								<h5 class="card-title card-text-colour">Resume API</h5>
 								<p class="card-text card-text-colour">
@@ -557,7 +579,7 @@
 					<div class="card project-card">
 						<img
 							class="card-img-top"
-							src="/stocktrader.png"
+							src="/stocktrader.webp"
 							alt="Card image cap"
 						/>
 						<div class="card-body">
@@ -583,7 +605,11 @@
 				<!-- Card 3 -->
 				<div class="col-lg-4 col-md-6 mb-4">
 					<div class="card project-card">
-						<img class="card-img-top" src="/betting.png" alt="Card image cap" />
+						<img
+							class="card-img-top"
+							src="/betting.webp"
+							alt="Card image cap"
+						/>
 						<div class="card-body">
 							<h5 class="card-title card-text-colour">
 								Betting Arbitrage Finder
@@ -607,11 +633,11 @@
 				<!-- Card 4 -->
 				<div class="col-lg-4 col-md-6 mb-4">
 					<div class="card project-card">
-						<img class="card-img-top" src="/api.png" alt="Card image cap" />
+						<img class="card-img-top" src="/api.webp" alt="Card image cap" />
 						<div class="card-body">
 							<h5 class="card-title card-text-colour">Resume API</h5>
 							<p class="card-text card-text-colour">
-								Custome API allowing anyone to pull data from my resume.
+								Custom API allowing anyone to pull data from my resume.
 							</p>
 							<p class="card-text">
 								<img src="/tech/JavaScript.svg" class="tech-logo" />
@@ -651,49 +677,22 @@
 		</div>
 
 		<div class="content bottom-page" id="work-experience">
-			<div class="row">
-				<div class="col-12 col-sm-6 rescol section slide-in">
-					<h2>💼 Resume</h2>
-
-					<div class="resume-container">
-						<img src="/res1.png" class="resimg" />
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-6 section slide-in" id="contact-me">
+					<div class="resume">
+						<h2>💼 Resume</h2>
 						<button
 							href="KYLETODD_Resume.pdf"
 							target="_blank"
 							download="KYLETODD_Resume.pdf"
-							class="btn btn-dark tn-lg d-block resdownload"
+							class="btn btn-dark tn-lg d-block resdownload w-100"
 							on:click={handleDownloadClick}
 						>
 							Download Resume
 						</button>
 					</div>
-					<div class="mt-5 d-flex justify-content-center">
-						<a
-							href="#contact-me"
-							class="scroll-down-arrow smallscreen-arrow ssa"
-							data-section="#contact-me"
-							><svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="50"
-								height="50"
-								viewBox="0 0 24 24"
-								><path
-									fill="none"
-									stroke="white"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="1.5"
-									d="m12 20l6-6m-6 6l-6-6m6 6V9.5M12 4v2.5"
-								/></svg
-							></a
-						>
-					</div>
-				</div>
-				<div
-					class="col-12 col-sm-6 contact-me section slide-in"
-					id="contact-me"
-				>
-					<h2>👋 Contact Me</h2>
+
+					<h2 class="contact-me">👋 Contact Me</h2>
 
 					<div class="contact-content">
 						<div class="row align-items-left justify-content-left">
@@ -735,9 +734,7 @@
 										/>
 									</div>
 
-									<button
-										type="submit"
-										class="btn btn-primary btn-lg d-block w-100">Submit</button
+									<button type="submit" class={buttonClass}>{buttonText}</button
 									>
 								</form>
 							</div>
