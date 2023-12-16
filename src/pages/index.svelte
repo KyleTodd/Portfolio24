@@ -675,7 +675,10 @@
 						<div class="row align-items-left justify-content-left">
 							<!-- Email Section -->
 							<div class=" col-12 text-left">
-								<form action="/submit-your-form-endpoint" method="post">
+								<form
+									action="https://api.kyletodd.com.au/submitemail"
+									method="get"
+								>
 									<div class="form-group form-inputs">
 										<input
 											type="text"
