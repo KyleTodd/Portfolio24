@@ -73,7 +73,7 @@
 			console.error("Error:", error);
 			buttonText = "Submission Failed";
 			alert(
-				"There was an error submitting the form \n Please send an email to kyleatodd@outlook.com"
+				"There was an error submitting the form \n Please send an email to kyleatodd@outlook.com",
 			);
 			buttonClass = "btn btn-danger btn-lg d-block w-100";
 		}
@@ -353,7 +353,7 @@
 							<div>Bachelor of Science in IT</div>
 							<div>Major - Enterprise Systems Development</div>
 							<div>Distinction Average</div>
-							<div>2023</div>
+							<div>Completed: 2023</div>
 						</div>
 						<div class="col-sm-4 col-md-2 col-6">
 							<img class="uts" src="uts.svg" />
@@ -362,7 +362,7 @@
 							<div>Bachelor of Business</div>
 							<div>Major - Finance</div>
 							<div>Credit Average</div>
-							<div>Exp. 2024</div>
+							<div>Expected: 2024</div>
 						</div>
 					</div>
 				</div>
@@ -417,7 +417,7 @@
 						>
 							Deployed scalable and reliable insurance broker client document
 							management software using Svelte as a front end and NodeJS as an
-							API to interface with the MySql Databse. All hosted on Azure.
+							API to interface with the MySql Database. All hosted on Azure.
 						</p>
 					</div>
 					<div>
@@ -428,14 +428,16 @@
 							<img src="/tech/SQL.svg" class="tech-logo" />
 							<img src="/tech/Azure.svg" class="tech-logo" />
 						</p>
-						<a href="#" class="btn btn-dark"
+						<a
+							href="https://github.com/KyleTodd/CoverCompanion"
+							class="btn btn-dark"
 							><img src="github.svg" class="button-logo" /></a
 						>
 						<a
-							href="https://www.bespokeinsurance.app/Login"
+							href="#"
 							target="_blank"
 							class="btn btn-light"
-							style="margin-left: 1em;">View Demo</a
+							style="margin-left: 1em;">Demo Available 07.01.24</a
 						>
 					</div>
 				</div>
