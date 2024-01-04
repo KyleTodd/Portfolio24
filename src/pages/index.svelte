@@ -434,10 +434,10 @@
 							><img src="github.svg" class="button-logo" /></a
 						>
 						<a
-							href="#"
+							href="https://covercompanion-sx5k-main-g6qvsh5ywa-as.a.run.app/Login"
 							target="_blank"
 							class="btn btn-light"
-							style="margin-left: 1em;">Demo Available 07.01.24</a
+							style="margin-left: 1em;">Demo</a
 						>
 					</div>
 				</div>
