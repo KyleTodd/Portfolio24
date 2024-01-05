@@ -351,7 +351,7 @@
 						</div>
 						<div class="col-md-4 col-6 text-md-left align-self-center">
 							<div>Bachelor of Science in IT</div>
-							<div>Major - Enterprise Systems Development</div>
+							<div>Major - Enterprise Software Development</div>
 							<div>Distinction Average</div>
 							<div>Completed: 2023</div>
 						</div>
@@ -417,7 +417,8 @@
 						>
 							Deployed scalable and reliable insurance broker client document
 							management software using Svelte as a front end and NodeJS as an
-							API to interface with the MySql Database. All hosted on Azure.
+							API to interface with the MySql Database. All are hosted on Azure
+							in production and Google Cloud for demo.
 						</p>
 					</div>
 					<div>
@@ -544,7 +545,7 @@
 									<img src="/tech/NodeJs.svg" class="tech-logo" />
 								</p>
 								<a
-									href="https://github.com/KyleTodd/CryptoCheckerCMC-API"
+									href="https://github.com/KyleTodd/ResumeAPI"
 									class="btn btn-dark"
 								>
 									<img src="github.svg" class="button-logo" />

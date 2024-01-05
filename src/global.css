@@ -98,6 +98,7 @@ button:focus {
 
 .card-title {
     letter-spacing: -1.1px;
+    color: white !important;
 }
 ul {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
