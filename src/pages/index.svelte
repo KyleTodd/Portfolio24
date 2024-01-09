@@ -523,9 +523,15 @@
 									<img src="/tech/Rest API's.svg" class="tech-logo" />
 									<img src="/tech/Flask.svg" class="tech-logo" />
 								</p>
-								<a href="https://github.com/KyleTodd/Arby" class="btn btn-dark">
-									<img src="github.svg" class="button-logo" />
-								</a>
+								<a href="https://github.com/KyleTodd/Arby" class="btn btn-dark"
+									><img src="github.svg" class="button-logo" /></a
+								>
+								<a
+									href="https://arby-g6qvsh5ywa-as.a.run.app/"
+									target="_blank"
+									class="btn btn-light"
+									style="margin-left: 1em;">Demo</a
+								>
 							</div>
 						</div>
 					</div>
@@ -615,16 +621,16 @@
 						/>
 						<div class="card-body">
 							<h5 class="card-title card-text-colour">
-								Betting Arbitrage Finder
+								Arby - Betting Arbitrage Finder
 							</h5>
 							<p class="card-text card-text-colour">
-								Identifies oppurtunities within the Austrailian sports betting
-								market for odds arbitrage oppurtunities
+								Identifies opportunities within the Australian sports betting
+								market for odds arbitrage.
 							</p>
 							<p class="card-text">
 								<img src="/tech/Python.svg" class="tech-logo" />
 								<img src="/tech/Rest API's.svg" class="tech-logo" />
-								<img src="/tech/Django.svg" class="tech-logo" />
+								<img src="/tech/Flask.svg" class="tech-logo" />
 							</p>
 							<a href="https://github.com/KyleTodd/Arby" class="btn btn-dark"
 								><img src="github.svg" class="button-logo" /></a
