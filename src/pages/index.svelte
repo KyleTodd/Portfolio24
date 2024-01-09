@@ -82,8 +82,8 @@
 	let techs = [
 		"Azure",
 		"CSS",
-		"Django",
 		"Docker",
+		"Flask",
 		"Git",
 		"HTML",
 		"Java",
@@ -485,7 +485,7 @@
 								<h5 class="card-title card-text-colour">Stock Trader</h5>
 								<p class="card-text card-text-colour">
 									Analyses stock sentiment for various social media sources and
-									trades the market
+									trades the market.
 								</p>
 								<p class="card-text">
 									<img src="/tech/Python.svg" class="tech-logo" />
@@ -515,15 +515,15 @@
 									Betting Arbitrage Finder
 								</h5>
 								<p class="card-text card-text-colour">
-									Finds opportunities within the Australian sports betting scene
-									for odds arbitrage opportunities
+									Identifies opportunities within the Australian sports betting
+									market for odds arbitrage.
 								</p>
 								<p class="card-text">
 									<img src="/tech/Python.svg" class="tech-logo" />
 									<img src="/tech/Rest API's.svg" class="tech-logo" />
-									<img src="/tech/Django.svg" class="tech-logo" />
+									<img src="/tech/Flask.svg" class="tech-logo" />
 								</p>
-								<a href="#" class="btn btn-dark">
+								<a href="https://github.com/KyleTodd/Arby" class="btn btn-dark">
 									<img src="github.svg" class="button-logo" />
 								</a>
 							</div>
@@ -618,8 +618,8 @@
 								Betting Arbitrage Finder
 							</h5>
 							<p class="card-text card-text-colour">
-								Finds oppurtunities within the Austrailian sports betting scene
-								for odds arbitrage oppurtunities
+								Identifies oppurtunities within the Austrailian sports betting
+								market for odds arbitrage oppurtunities
 							</p>
 							<p class="card-text">
 								<img src="/tech/Python.svg" class="tech-logo" />
@@ -628,6 +628,12 @@
 							</p>
 							<a href="https://github.com/KyleTodd/Arby" class="btn btn-dark"
 								><img src="github.svg" class="button-logo" /></a
+							>
+							<a
+								href="https://arby-g6qvsh5ywa-as.a.run.app/"
+								target="_blank"
+								class="btn btn-light"
+								style="margin-left: 1em;">Demo</a
 							>
 						</div>
 					</div>
