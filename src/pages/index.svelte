@@ -435,7 +435,7 @@
 							><img src="github.svg" class="button-logo" /></a
 						>
 						<a
-							href="https://covercompanion-sx5k-main-g6qvsh5ywa-as.a.run.app/Login"
+							href="https://bespokeinsurance.app/Login"
 							target="_blank"
 							class="btn btn-light"
 							style="margin-left: 1em;">Demo</a
@@ -660,7 +660,7 @@
 								<img src="/tech/NodeJs.svg" class="tech-logo" />
 							</p>
 							<a
-								href="https://github.com/KyleTodd/CryptoCheckerCMC-API"
+								href="https://github.com/KyleTodd/ResumeAPI"
 								class="btn btn-dark"
 								><img src="github.svg" class="button-logo" /></a
 							>
